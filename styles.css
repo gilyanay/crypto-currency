@@ -1,0 +1,40 @@
+body , html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.Parallax{
+    background: url(./images/back1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 67%;
+}
+
+#cryptoSearchName{
+    height: 35px;
+}
+
+#header{
+    height: 20%;
+}
+#displayAria{
+    height: 70%;
+}
+
+#dinamicAria{
+    background-color:#f8f9fa ;
+
+}
+
+.modal-body{
+    background-color: #366da53b;
+}
+

@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Crypto Currency</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <h1>Crypto Currency</h1>
+            <div class="container">
+                <form>
+                    <input type="search" placeholder="Search" aria-label="Search" id="cryptoSearchName">
+                    <button class="btn btn-outline-success my-1 my-sm-0" type="button"
+                        onclick="search()">Search</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav nav nav-fill w-100">
+                        <li class="nav-item">
+                            <a class="btn btn-light" onclick="home()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light" onclick="reports()">Live Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light" onclick="about()">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="displayAria">
+        <div class="Parallax"></div>
+        <div id="dinamicAria" class="row justify-content-center"></div>
+        <div class="Parallax"></div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLongTitle">You heve reached the limit of coins you
+                        can hold.<br> In order to save your last choice, you need to remove at least one coin. </h6>
+
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="dontSave()">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveChanges()">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
